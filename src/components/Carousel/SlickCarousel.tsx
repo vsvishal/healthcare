@@ -13,9 +13,9 @@ interface Props {
 }
 
 function SampleNextArrow(props: {
-  className?: any;
-  style?: any;
-  onClick?: any;
+  className?: string;
+  style?: object;
+  onClick?: () => void;
 }) {
   const { className, style, onClick } = props;
   return (
@@ -31,9 +31,9 @@ function SampleNextArrow(props: {
 }
 
 function SamplePrevArrow(props: {
-  className?: any;
-  style?: any;
-  onClick?: any;
+  className?: string;
+  style?: object;
+  onClick?: () => void;
 }) {
   const { className, style, onClick } = props;
   return (
