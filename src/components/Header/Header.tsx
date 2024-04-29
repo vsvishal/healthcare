@@ -1,6 +1,4 @@
-import React from "react";
 import logo from "../../assets/images/LOGO.png";
-// bg-[#066bb1]
 
 const Header = () => {
   return (

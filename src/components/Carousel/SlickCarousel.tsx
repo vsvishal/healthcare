@@ -1,8 +1,10 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./SilkCarousel.css";
+
+interface Image {
+  images: string[];
+}
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -32,7 +34,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-function SlickCarousel({ images }) {
+function SlickCarousel({ images }: Image) {
   const settings = {
     dots: true,
     fade: true,
@@ -49,12 +51,13 @@ function SlickCarousel({ images }) {
   return (
     <div className="slider-container mx-auto w-[70%] my-10">
       <Slider {...settings}>
-        {images.map((image, i) => (
+        {images.map((image: string, i: number) => (
           <div>
             <img
               src={image}
               key={i}
               className="w-full h-[20rem] md:h-[32rem] transition duration-300 hover:scale-105"
+              alt="slider-img"
             />
           </div>
         ))}

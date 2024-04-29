@@ -1,5 +1,4 @@
 import Card from "./components/Card/Card";
-import Carousel from "./components/Carousel/Carousel";
 import SlickCarousel from "./components/Carousel/SlickCarousel";
 import Header from "./components/Header/Header";
 import VisionMission from "./components/VisionMission/VisionMission";
@@ -7,7 +6,6 @@ import { cardData } from "./helper/cardData";
 import {
   Footer,
   zeviD3,
-  zevicet,
   zevicuf,
   zevicufls,
   zevifit,
