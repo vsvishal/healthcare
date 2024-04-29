@@ -6,7 +6,7 @@ interface Image {
   images: string[];
 }
 
-function SampleNextArrow(props) {
+function SampleNextArrow(props: { className: any; style: any; onClick: any }) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -20,7 +20,7 @@ function SampleNextArrow(props) {
   );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrow(props: { className: any; style: any; onClick: any }) {
   const { className, style, onClick } = props;
   return (
     <div
