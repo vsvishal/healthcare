@@ -7,16 +7,12 @@ interface Image {
 }
 
 interface Props {
-  className: string;
-  style: string;
-  onClick: () => void;
-}
-
-function SampleNextArrow(props: {
   className?: string;
   style?: object;
   onClick?: () => void;
-}) {
+}
+
+function SampleNextArrow(props: Props) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -30,11 +26,7 @@ function SampleNextArrow(props: {
   );
 }
 
-function SamplePrevArrow(props: {
-  className?: string;
-  style?: object;
-  onClick?: () => void;
-}) {
+function SamplePrevArrow(props: Props) {
   const { className, style, onClick } = props;
   return (
     <div
